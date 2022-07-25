@@ -1,0 +1,151 @@
+:root {
+    --first-black: #1f232e;
+    --secon-black: #858588;
+    --first-green: #3d8168;
+    --second-green: #1f7052;
+    --bg-body: #f3eae3;
+    --bg-content: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 35px);
+}
+
+.container {
+    box-sizing: border-box;
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    min-width: 768px;
+    background-color: var(--bg-content);
+    border-radius: 20px;
+}
+
+.image-box {
+    flex: 0 0 50%;
+    min-width: 50%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+
+}
+
+.text-content {
+    flex: 0 0 50%;
+    min-width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-content>* {
+    padding-bottom: 10px;
+}
+
+.text-content h5 {
+    color: var(--secon-black);
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.text-content h1 {
+    color: var(--first-black);
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.text-content p {
+    color: var(--secon-black);
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.new-price {
+    color: var(--first-green);
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.old-price {
+    padding-left: 20px;
+    color: var(--secon-black);
+}
+
+.btn-card {
+    width: 100%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--first-green);
+    display: block;
+    height: 55px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    background-color: var(--second-green);
+}
+
+.btn-card span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        min-width: 300px;
+        margin: 20px;
+        width: 600px;
+    }
+
+    .image-box img {
+        border-radius: 20px 20px 0 0;
+
+    }
+}
