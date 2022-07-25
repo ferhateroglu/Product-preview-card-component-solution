@@ -6,7 +6,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 [<img src="./screenshots/desktop.PNG" width="720"/>](desktop.png)
 [</br>]()
-[<img src="./screenshots/mobile.png" width="360"/>](mobile.png)
+[<img src="./screenshots/mobile.PNG" width="360"/>](mobile.png)
 
 ### Built with
 
